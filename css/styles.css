@@ -1,0 +1,57 @@
+header{
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+h1{
+    font-family: "Lato", sans-serif;
+    font-weight: 700;
+    font-style: normal;     
+}  
+
+h2{
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: italic; 
+}
+
+
+
+@media screen {
+    header{
+        min-width: 320px;
+    }
+}
+
+.palabras p:hover{
+    color:  rgb(37 99 235);
+}
+
+.palabras p:active{
+    color: #ef1100; /* Color de fondo azul */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3); /* Sombra gris */
+
+}
+@media screen and (max-width:767px) {
+    .headerImage{
+        margin:auto;
+        height: 15vh;
+    }
+    h1{
+        display: none;
+    }
+    .disapaer p{
+        display: none;
+        visibility: collapse;
+    }
+
+    #plataforms{
+        display: grid;
+        grid-template-columns: repeat(1, minmax(0, 1fr)) ;
+        grid-template-rows: repeat(1, minmax(0, 1fr));
+        
+    }
+}
+
