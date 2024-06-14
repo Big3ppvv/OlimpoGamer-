@@ -34,6 +34,12 @@ h2{
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3); /* Sombra gris */
 
 }
+.merriweather-bold {
+    font-family: "Merriweather", serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+  
 @media screen and (max-width:767px) {
     .headerImage{
         margin:auto;
@@ -46,6 +52,16 @@ h2{
         display: none;
         visibility: collapse;
     }
+
+    .mensaje{
+        display: none;
+        visibility: collapse;
+    }
+
+   .redes{
+        justify-items: center;
+        margin: 0 auto;
+   }
 
     #plataforms{
         display: grid;
