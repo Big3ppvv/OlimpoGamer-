@@ -17,8 +17,6 @@ h2{
     font-style: italic; 
 }
 
-
-
 @media screen {
     header{
         min-width: 320px;
@@ -26,29 +24,40 @@ h2{
 }
 
 .palabras p:hover{
-    color:  rgb(37 99 235);
+    color: rgb(37 99 235);
 }
 
 .palabras p:active{
-    color: #ef1100; /* Color de fondo azul */
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3); /* Sombra gris */
-
+    color: #ef1100;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
 }
+
 .merriweather-bold {
     font-family: "Merriweather", serif;
     font-weight: 700;
     font-style: normal;
-  }
-  
+}
+
+.bordes{
+    box-shadow: 2px 2px 5px black;
+    border-radius: 8px; /* Added border radius */
+}
+
 @media screen and (max-width:767px) {
+    .contactos a{
+        margin: 1vw;
+    }
+
     .headerImage{
-        margin:auto;
+        margin: auto;
         height: 15vh;
     }
+
     h1{
         display: none;
     }
-    .disapaer p{
+
+    .disappear p{
         display: none;
         visibility: collapse;
     }
@@ -58,16 +67,9 @@ h2{
         visibility: collapse;
     }
 
-   .redes{
-        justify-items: center;
-        margin: 0 auto;
-   }
-
     #plataforms{
         display: grid;
-        grid-template-columns: repeat(1, minmax(0, 1fr)) ;
+        grid-template-columns: repeat(1, minmax(0, 1fr));
         grid-template-rows: repeat(1, minmax(0, 1fr));
-        
     }
 }
-
