@@ -4,8 +4,11 @@ header {
     top: 0;
     z-index: 100;
 }
+/* archivo: formulario.css */
+
 
 .bordes{
+    border: solid;
     box-shadow: 2px 2px 5px black;
     border-radius: 8px;
 }

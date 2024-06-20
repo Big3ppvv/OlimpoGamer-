@@ -42,12 +42,15 @@ h2{
     box-shadow: 2px 2px 5px black;
     border-radius: 8px; /* Added border radius */
 }
+.imagen-fondo{
+    border: solid 1rem #24446d;
+}
 
 @media screen and (max-width:767px) {
     .contactos a{
         margin: 1vw;
     }
-
+    
     .headerImage{
         margin: auto;
         height: 15vh;

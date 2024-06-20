@@ -7,31 +7,48 @@
     <link rel="stylesheet" href="../css/formulario.css">
     <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
 </head>
-</head>
 <body>
     <header class="flex bg-green-500 justify-between w-full">
         <div class="headerImage">
             <img src="../utilities/eldenring.png" class="w-16 mt-4 m-auto float-left">
         </div>
         <ul class="text-sm flex gap-4 hidden md:flex gap-8 items-center px-6">
-            <li><a href="#contactos-y-redes">Contacto</a></li>
+            <li><a href="#">Contacto</a></li>
             <li><a href="#plataforms">Productos</a></li>
             <li><a href="#contactos-y-redes">Redes Sociales</a></li>
         </ul>
     </header>
     <main>
-        <form action="posts" class="bordes grid-cols-1 grid-rows-1 space-y-10 w-6/12 m-auto">
-            <div class="mt-8 p-8">
+        <form action="posts" class="bordes grid-cols-1 grid-rows-1 space-y-10 w-6/12 m-auto my-10 p-8">
+            <div class="mb-10">
                 <h2 class="text-lg text-strong">Consultas o Sugerencias</h2>
             </div>
 
-            <div  class="p-8">
-                <form>
-                    <label for="nombre">Nombre</label>
-                    <input type="text" id="nombre" required>
-                </form>
+            <div class="flex flex-col space-y-4">
+                <div class="flex items-center">
+                    <label for="nombre" class="w-1/4">Nombre</label>
+                    <input class="w-3/4 bordes rounded border-black ml-4" id="nombre" type="text" placeholder="Introduce tu nombre" required>
+                </div>
+                <div class="flex items-center">
+                    <label for="apellido" class="w-1/4">Apellido</label>
+                    <input class="w-3/4 bordes rounded border-black ml-4" id="apellido" type="text" placeholder="Introduce tu apellido" required>
+                </div>
+                <div class="flex items-center">
+                    <label for="email" class="w-1/4">E-Mail</label>
+                    <input class="w-3/4 bordes rounded border-black ml-4" id="email" type="email" placeholder="Introduce tu email" required>
+                </div>
+                <div class="flex items-center">
+                    <label for="num" class="w-1/4">Numero de Telefono</label>
+                    <input class="w-3/4 bordes rounded border-black ml-4" id="num" type="tel" placeholder="(54)" required>
+                </div>
+                <div class="flex items-center mt-4">
+                    <label for="pedidos" class="w-1/4">Pedidos o <br> problemas</label>
+                    <textarea id="pedidos" class="w-3/4 bordes rounded border-black mt-2"></textarea>
+                </div>
+                <div class="flex items-center m-auto">
+                    <input class="w-3/4 bg-gray-900 text-white  bordes rounded border-black ml-4" id="num" type="submit" value="Enviar!" required>
+                </div>
             </div>
-        
         </form>
     </main>
     <footer class="contactos bg-green-700 grid grid-cols-2">
@@ -50,6 +67,5 @@
             </a>
         </div>
     </footer>
-    
 </body>
 </html>
