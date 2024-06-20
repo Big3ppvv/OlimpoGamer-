@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/formulario.css">
+    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+</head>
+</head>
+<body>
+    <header class="flex bg-green-500 justify-between w-full">
+        <div class="headerImage">
+            <img src="../utilities/eldenring.png" class="w-16 mt-4 m-auto float-left">
+        </div>
+        <ul class="text-sm flex gap-4 hidden md:flex gap-8 items-center px-6">
+            <li><a href="#contactos-y-redes">Contacto</a></li>
+            <li><a href="#plataforms">Productos</a></li>
+            <li><a href="#contactos-y-redes">Redes Sociales</a></li>
+        </ul>
+    </header>
+    <main>
+        <form action="posts" class="bordes grid-cols-1 grid-rows-1 space-y-10 w-6/12 m-auto">
+            <div class="mt-8 p-8">
+                <h2 class="text-lg text-strong">Consultas o Sugerencias</h2>
+            </div>
+
+            <div  class="p-8">
+                <form>
+                    <label for="nombre">Nombre</label>
+                    <input type="text" id="nombre" required>
+                </form>
+            </div>
+        
+        </form>
+    </main>
+    <footer class="contactos bg-green-700 grid grid-cols-2">
+        <div class="mensaje">
+            <p class="merriweather-bold pl-4 pt-2">Seguime en mis redes sociales!</p>
+        </div>
+        <div class="contactos flex justify-center gap-2 pb-4 pt-2">    
+            <a href="#" class="href">
+                <img class="w-8" src="../assets/instagram-internet-media-svgrepo-com.svg">
+            </a>
+            <a href="#" class="href">
+                <img class="w-8" src="../assets/facebook-svgrepo-com.svg">
+            </a>
+            <a href="#" class="href">
+                <img class="w-8" src="../assets/whatsapp-svgrepo-com.svg">
+            </a>
+        </div>
+    </footer>
+    
+</body>
+</html>

@@ -14,7 +14,7 @@ header {
     font-weight: 500;
     font-style: normal;
 }
-
+  
 @media screen {
     header {
         min-width: 320px;
@@ -25,13 +25,13 @@ header {
     header{
         min-width: 320px;
     }
-    .headerImage{
-        margin: auto;
-        height: 15vh;
-    }
     .mensaje{
         display: none;
         visibility: collapse;
+    }
+    .headerImage{
+        margin: auto;
+        height: 15vh;
     }
 
     .contactos{
@@ -44,10 +44,8 @@ header {
         text-align: center;
         margin: auto;  
     }
-
-
-  
-
     
+    p{
+        display: none;
+    }
 }
-

@@ -4,21 +4,7 @@ header {
     top: 0;
     z-index: 100;
 }
-
-.bordes{
-    box-shadow: 2px 2px 5px black;
-    border-radius: 8px;
-}
-.roboto-medium {
-    font-family: "Roboto", sans-serif;
-    font-weight: 500;
-    font-style: normal;
-}
-  
-.bg-green-500 {
-    padding: 0.5rem;
-}
-
+ 
 @media screen {
     header {
         min-width: 320px;
@@ -26,30 +12,16 @@ header {
 }
 
 @media screen and (max-width: 767px) {
+    header{
+        min-width: 320px;
+    }
     .mensaje{
         display: none;
         visibility: collapse;
     }
-
-    .contactos{
-        width: 100vw;
+    .headerImage{
+        margin: auto;
+        height: 15vh;
     }
 
-    .comprar-palabra{
-        width: min-content;
-        display:block;
-        text-align: center;
-        margin: auto;  
-    }
-
-    p{
-        display: none;
-    }
-
-    header img {
-        display: none;
-        visibility: collapse;
-    }
-
-    
 }
