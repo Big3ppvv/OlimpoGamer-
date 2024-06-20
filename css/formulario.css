@@ -4,7 +4,7 @@ header {
     top: 0;
     z-index: 100;
 }
-/* archivo: formulario.css */
+
 
 
 .bordes{
@@ -24,7 +24,48 @@ header {
     }
 }
 
-@media screen and (max-width: 767px) {
+@media screen and(max-width: 425px) {
+    form div{
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        text-align: center;
+        width: 100%;
+        
+    }
+    
+}
+
+@media screen and (max-width: 767px){
+    form div{
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        text-align: center;
+        width: 100%;
+        height: auto;
+        padding: auto;
+    }
+
+    form{
+        width: 100%;
+    }
+
+    form input{
+        height: 100%;
+    }
+
+    form input[type=submit] {
+        width: auto; /* Ajusta el ancho según sea necesario */
+        height: auto;
+        margin: 0 auto; /* Centra horizontalmente el botón */
+        display: block; /* Asegura que el botón ocupe todo el ancho disponible */
+    }
+
+    form textarea{
+        width: 50vw;
+    }
+
     header{
         min-width: 320px;
     }
