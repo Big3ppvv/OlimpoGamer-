@@ -4,10 +4,7 @@ header {
     top: 0;
     z-index: 100;
 }
-.bordes{
-    box-shadow: 2px 2px 5px black;
-    border-radius: 8px; 
-}
+
 
 .roboto-medium {
     font-family: "Roboto", sans-serif;
