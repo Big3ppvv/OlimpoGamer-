@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -23,47 +24,16 @@
     </header>
 
     <main>
-        <div class="games bordes justify-items-center m-8 gap-8 mt-16 p-8 bg-slate-300 md:grid grid-cols-1 2xl:grid grid-cols-3">
-            <div class="bordes bg-slate-300 p-8 text-center space-y-10 mb-8">
-                <img src="../utilities/juegosPS4/The Last of Us Part 2.jpg">
-                <p class="roboto-medium">The Last Of Us 2</p>
-                <p class=" comprar-palabra text-xl text-white bg-gray-900"><a href="#">Comprar</a></p>
-            </div>
-            <div class="games bordes bg-slate-300 p-8 text-center space-y-10 mb-8">
-                <img src="../utilities/juegosPS4/RedDeadRedemption2.jpg">
-                <p class="roboto-medium">Red Dead Redemption 2</p>
-                <p class=" comprar-palabra text-xl text-white bg-gray-900"><a href="#">Comprar</a></p>
-            </div>
-            <div class=" games bordes bg-slate-300 p-8 text-center space-y-10 mb-8">
-                <img src="../utilities/juegosPS4/Uncharted4.jpg">
-                <p class="roboto-medium">Uncharted 4</p>
-                <p class=" comprar-palabra text-xl text-white bg-gray-900"><a href="#">Comprar</a></p>
-            </div>
-            <div class="games bordes bg-slate-300 p-8 text-center space-y-10 mb-8">
-                <img src="../utilities/juegosPS4/God of War.jpg">
-                <p class="roboto-medium">God Of War</p>
-                <p class=" comprar-palabra text-xl text-white bg-gray-900"><a href="templates/pagina1.html">Comprar</a></p>
-            </div>
-            <div class="games bordes bg-slate-300 p-8 text-center space-y-10 mb-8">
-                <img src="../utilities/juegosPS4/Elden Ring.jpg">
-                <p class="roboto-medium">Elden Ring</p>
-                <p class=" comprar-palabra text-xl text-white bg-gray-900"><a href="#">Comprar</a></p>
-            </div>
-            <div class="games bordes bg-slate-300 p-8 text-center space-y-10 mb-8">
-                <img src="../utilities/juegosPS4/Bloodborne.jpg">
-                <p class="roboto-medium">Bloodborne</p>
-                <p class="comprar-palabra text-xl text-white bg-gray-900"><a href="#">Comprar</a></p>
-            </div>
-            <div>
-                <p class="roboto-medium">Esta pagina esta en proceso, si quieres otro juegos o tiene algunos problemas ingresa 
-                    <a href="../templates/formulario.html">click aqui!</a></p>
-            </div>
+        <input type="text" id="game-filter" placeholder="Buscar juegos..." class="m-4 p-2 border rounded">
+
+        <div id="listado" class="games bordes justify-items-center m-8 gap-8 mt-16 p-8 bg-slate-300 md:grid grid-cols-1 2xl:grid-cols-3">
+            <!-- Aquí se renderizarán los juegos -->
         </div>
     </main>
 
     <footer class="contactos bg-green-700 grid grid-cols-2">
         <div class="mensaje">
-            <p class="merriweather-bold pl-4 pt-2">Seguime en mis redes sociales!</p>
+            <p class="merriweather-bold pl-4 pt-2">¡Sígueme en mis redes sociales!</p>
         </div>
         <div class="contactos flex justify-center gap-2 pb-4 pt-2">    
             <a href="#" class="href">
@@ -77,5 +47,7 @@
             </a>
         </div>
     </footer>
+
+    <script src="../jss/productosPS4.js"></script>
 </body>
 </html>
