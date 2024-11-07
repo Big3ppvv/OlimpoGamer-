@@ -1,12 +1,12 @@
 (() => {
     const gamesData = {
-        "PS3": [
-            { "titulo": "Assassins Creed", "precio": "4000", "img": "../utilities/juegosPS3/Assassins Creed.jpg" },
-            { "titulo": "Dark Souls", "precio": "5000", "img": "../utilities/juegosPS3/Dark_Souls.jpg" },
-            { "titulo": "God Of War 3", "precio": "3500", "img": "../utilities/juegosPS3/GodOfWar.jpg" },
-            { "titulo": "Uncharted 2", "precio": "2500", "img": "../utilities/juegosPS3/Uncharted2.jpg" },
-            { "titulo": "Red Dead Redemption", "precio": "4500", "img": "../utilities/juegosPS3/Red Dead Redemption.jpg" },
-            { "titulo": "The Last Of Us", "precio": "5500", "img": "../utilities/juegosPS3/The Last of Us.jpg" }
+        "PC": [
+            { "titulo": "Counter Strike 2", "precio": "4500", "img": "../utilities/juegosPC/Counter-Strike2.jpg" },
+            { "titulo": "Half Life 2", "precio": "3400", "img": "../utilities/juegosPC/HalfLife.jpg" },
+            { "titulo": "Halo", "precio": "3500", "img": "../utilities/juegosPC/Halo_ CE Anniversary (PC).jpg" },
+            { "titulo": "Hollow Knight", "precio": "1500", "img": "../utilities/juegosPC/HollowKnight.jpg" },
+            { "titulo": "Left 4 Dead 2", "precio": "2500", "img": "../utilities/juegosPC/Left4Dead2.jpg" },
+            { "titulo": "Portal 2", "precio": "2600", "img": "../utilities/juegosPC/Portal2.jpg" }
         ]
     };
 
@@ -31,14 +31,15 @@
         $listado.appendChild($fragmento);
     };
 
-    // Corrected function call
-    renderizarGames(gamesData.PS3);
+    // Initial rendering of games
+    renderizarGames(gamesData.PC);
 
+    // Filter functionality
     $filterInput.addEventListener('input', (e) => {
         const searchText = e.target.value.toLowerCase();
-        const filteredGames = gamesData.PS3.filter(game =>
+        const filteredGames = gamesData.PC.filter(game =>
             game.titulo.toLowerCase().includes(searchText)
         );
-        renderizarGames(filteredGames); // Ensure this matches the function name
+        renderizarGames(filteredGames);
     });
 })();

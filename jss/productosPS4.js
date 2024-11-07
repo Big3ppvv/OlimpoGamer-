@@ -31,10 +31,10 @@
         $listado.appendChild($fragmento);
     };
 
-    // Initial rendering of games
+    
     renderizarGames(gamesData.PS4);
 
-    // Filter functionality
+    
     $filterInput.addEventListener('input', (e) => {
         const searchText = e.target.value.toLowerCase();
         const filteredGames = gamesData.PS4.filter(game =>

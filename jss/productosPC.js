@@ -1,5 +1,5 @@
 (() => {
-    const gamesData = {
+    const datosJuegos = {
         "PC": [
             { "titulo": "Counter Strike 2", "precio": "4500", "img": "../utilities/juegosPC/Counter-Strike2.jpg" },
             { "titulo": "Half Life 2", "precio": "3400", "img": "../utilities/juegosPC/HalfLife.jpg" },
@@ -31,13 +31,13 @@
         $listado.appendChild($fragmento);
     };
 
-    // Initial rendering of games
-    renderizarGames(gamesData.PC);
+    
+    renderizarGames(datosJuegos.PC);
 
-    // Filter functionality
+    
     $filterInput.addEventListener('input', (e) => {
         const searchText = e.target.value.toLowerCase();
-        const filteredGames = gamesData.PC.filter(game =>
+        const filteredGames = datosJuegos.PC.filter(game =>
             game.titulo.toLowerCase().includes(searchText)
         );
         renderizarGames(filteredGames);
