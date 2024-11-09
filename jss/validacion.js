@@ -17,7 +17,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
         
         if (nombre === "") {
-            errors.push("ElNombre es obligatorio.");
+            errors.push("El Nombre es obligatorio.");
         }
 
         
