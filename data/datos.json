@@ -1,0 +1,62 @@
+{
+  "placas": [
+    {
+      "titulo": "Mother Asrock A520M-HDV AM4 ",
+      "descripcion": "AM4 APU 3th Gen,AM4 Ryzen 3th Gen,AM4 Ryzen 4th Gen,AM4 APU 5000",
+      "precio": 73000,
+      "img": "img/A520M.jpg"
+    },
+    {
+      "titulo": "Mother Asrock B450M-HDV 4.0 AM4 HDMI M.2 ",
+      "descripcion": "AM4 APU 3th Gen,AM4 Ryzen 3th Gen,AM4 Ryzen 4th Gen,AM4 APU 5000",
+      "precio": 75800,
+      "img": "img/B450M.jpg"
+    },
+    {
+      "titulo": "Mother ASUS PRIME A520M-K DDR4 AM4",
+      "descripcion": "AM4 APU 3th Gen,AM4 Ryzen 3th Gen,AM4 Ryzen 4th Gen,AM4 APU 5000",
+      "precio": 80000,
+      "img": "img/A520M-K.jpg"
+      
+    }
+  ],
+  "monitores": [
+    {
+      "titulo": "Monitores Apex",
+      "descripcion": "Monitor marca Apex 22 pulgadas",
+      "precio": 121000,
+      "img": "img/monitor_apex.jpg"
+    },
+    {
+      "titulo": "Monitores LG",
+      "descripcion": "Monitor marca LG 22 pulgadas",
+      "precio": 131000,
+      "img": "img/monitor_lg.jpg"
+    },
+    {
+      "titulo": "Monitores Samsung",
+      "descripcion": "Monitor Samsung Curvo 27 pulgadas",
+      "precio": 217000,
+      "img": "img/monitor_samsung.jpg"
+    }
+  ], "procesadores": [
+    {
+      "titulo": "Procesador AMD RYZEN 5 3600",
+      "descripcion": "Procesador AMD RYZEN 5 3600 4.2GHz Turbo AM4 Wraith Stealth Cooler",
+      "precio": 115000,
+      "img": "img/RYZEN33200.jpg"
+    },
+    {
+      "titulo": "Procesador AMD RYZEN 3 3200G",
+      "descripcion": "Procesador AMD RYZEN 3 3200G 4.0GHz Turbo + Radeon Vega 8 AM4 Wraith Stealth Cooler ",
+      "precio": 82000,
+      "img": "img/RYZEN53600.jpg"
+    },
+    {
+      "titulo": "Procesador AMD Athlon 3000G",
+      "descripcion": "Procesador AMD Athlon 3000G 3.5GHz + Radeon Vega 3 AM4",
+      "precio": 59000,
+      "img": "img/ATHLON3000.jpg"
+    }
+  ]
+}

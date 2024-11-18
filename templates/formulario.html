@@ -4,17 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css">
     <link rel="stylesheet" href="../css/formulario.css">
     <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
 </head>
 <body>
     <header class="flex bg-green-500 justify-between w-full">
         <div class="headerImage">
-            <img src="../utilities/eldenring.png" class="w-16 mt-4 m-auto float-left">
+            <a href="../index.html"></a><img src="../utilities/eldenring.png" class="w-16 mt-4 m-auto float-left">
         </div>
         <ul class="text-sm flex gap-4 hidden md:flex gap-8 items-center px-6">
-            <li><a href="#">Contacto</a></li>
-            <li><a href="#plataforms">Productos</a></li>
+            <li><a href="../templates/formulario.html">Contacto</a></li>
+            <li><a href="../index.html">Productos</a></li>
             <li><a href="#contactos-y-redes">Redes Sociales</a></li>
         </ul>
     </header>
@@ -46,7 +47,7 @@
                     <textarea id="pedidos" class="w-3/4 bordes rounded border-black mt-2"></textarea>
                 </div>
                 <div class="flex items-center m-auto">
-                    <input class="w-3/4 bg-gray-900 text-white  bordes rounded border-black ml-4" id="num" type="submit" value="Enviar!" required>
+                    <input class="w-3/4 bg-gray-900 text-white bordes rounded border-black ml-4" id="num" type="submit" value="Enviar!" required>
                 </div>
             </div>
         </form>
@@ -68,5 +69,6 @@
         </div>
     </footer>
     <script src="../jss/validacion.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </body>
 </html>
