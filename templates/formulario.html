@@ -33,10 +33,12 @@
                 <div class="flex flex-col w-full">
                     <label for="nombre" class="mb-1 font-medium text-gray-700">Nombre</label>
                     <input class="border rounded p-2 focus:outline-none focus:ring focus:ring-red-300" id="nombre" type="text" placeholder="Introduce tu nombre" required>
+                    <span id="error-nombre" class="text-red-500 text-sm hidden"></span>
                 </div>
                 <div class="flex flex-col w-full">
                     <label for="apellido" class="mb-1 font-medium text-gray-700">Apellido</label>
                     <input class="border rounded p-2 focus:outline-none focus:ring focus:ring-red-300" id="apellido" type="text" placeholder="Introduce tu apellido" required>
+                    <span id="error-apellido" class="text-red-500 text-sm hidden"></span>
                 </div>
             </div>
 
@@ -44,16 +46,19 @@
                 <div class="flex flex-col w-full">
                     <label for="email" class="mb-1 font-medium text-gray-700">E-Mail</label>
                     <input class="border rounded p-2 focus:outline-none focus:ring focus:ring-red-300" id="email" type="email" placeholder="Introduce tu email" required>
+                    <span id="error-email" class="text-red-500 text-sm hidden"></span>
                 </div>
                 <div class="flex flex-col w-full">
                     <label for="num" class="mb-1 font-medium text-gray-700">Número de Teléfono</label>
                     <input class="border rounded p-2 focus:outline-none focus:ring focus:ring-red-300" id="num" type="tel" placeholder="+54 ( ) " required>
+                    <span id="error-numero" class="text-red-500 text-sm hidden"></span>
                 </div>
             </div>
 
             <div class="flex flex-col">
                 <label for="pedidos" class="mb-1 font-medium text-gray-700">Pedidos o Problemas</label>
                 <textarea id="pedidos" rows="4" class="border rounded p-2 focus:outline-none focus:ring focus:ring-red-300"></textarea>
+                <span id="error-pedidos" class="text-red-500 text-sm hidden"></span>
             </div>
 
             <div class="flex justify-center mt-4">
@@ -74,6 +79,7 @@
     </footer>
 
     <script src="../jss/validacion.js"></script>
-    <script src=https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <!-- SweetAlert2 -->
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script> 
 </body>
 </html>
