@@ -2,9 +2,7 @@ document.addEventListener("DOMContentLoaded", function() {
     const form = document.querySelector("form");
     
     form.addEventListener("submit", function(event) {
-        event.preventDefault(); // Prevent default form submission
-        
-        // Get values from fields
+        event.preventDefault(); 
         const nombre = document.getElementById("nombre").value.trim();
         const apellido = document.getElementById("apellido").value.trim();
         const email = document.getElementById("email").value.trim();
@@ -13,7 +11,6 @@ document.addEventListener("DOMContentLoaded", function() {
 
         let errorMessage = "";
 
-        // Validation logic (as in your original code)
         if (nombre === "") {
             errorMessage = "El Nombre es obligatorio.";
         } else if (!/^[A-Za-zÁÉÍÓÚáéíóúÑñ\s]+$/.test(nombre)) {
@@ -36,7 +33,7 @@ document.addEventListener("DOMContentLoaded", function() {
             errorMessage = "El campo de pedidos o problemas debe ser completado.";
         }
 
-        // Show errors or success message
+        
         if (errorMessage !== "") {
             Swal.fire({
                 title: 'Error en el formulario',
@@ -45,16 +42,13 @@ document.addEventListener("DOMContentLoaded", function() {
                 confirmButtonText: 'Aceptar'
             });
         } else {
-            // If no errors, show success message
             Swal.fire({
                 title: 'Formulario Enviado',
                 text: 'Tu consulta se ha enviado correctamente!',
                 icon: 'success',
                 confirmButtonText: 'Aceptar'
             }).then(() => {
-                // Optionally reset the form or redirect
-                form.reset(); // Reset form fields
-                // You can also redirect or perform other actions here
+                form.reset();
             });
         }
     });

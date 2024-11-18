@@ -1,0 +1,51 @@
+.hidden {
+    display: none;
+}
+
+.productosListado {
+    gap: 20px;
+}
+
+.tarjeta {
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 350px;
+    width: 100%;
+}
+
+.tarjeta img {
+    width: 100%;
+    height: auto; /* Cambiado a auto para mantener la proporción */
+    max-height: 220px; /* Limitar la altura máxima */
+    object-fit: contain; /* Cambiado a contain para mantener la proporción */
+    border-radius: 12px;
+    margin-bottom: 16px;
+}
+
+.tarjeta .titulo {
+    font-size: 1.8rem; /* Título más grande */
+    font-weight: 800; /* Extra-bold para resaltar */
+    color: #1e3a8a; /* Azul oscuro para destacar */
+    margin: 12px 0; /* Separación con otros elementos */
+    text-transform: capitalize; /* Capitalizar cada palabra */
+}
+
+.tarjeta .precio {
+    font-size: 1.4rem; /* Más grande y llamativo */
+    color: #10b981; /* Verde vibrante */
+    font-weight: 700; /* Resaltar el precio */
+    margin: 8px 0; /* Espaciado entre elementos */
+}
+
+.tarjeta .precio span {
+    color: #6b7280; /* Gris para el texto "Precio" */
+    font-size: 1.1rem; /* Más pequeño que el precio */
+    font-weight: 600; /* Moderadamente negrita */
+}
