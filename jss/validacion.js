@@ -4,7 +4,7 @@ window.onload = function() {
     form.addEventListener("submit", function(event) {
         event.preventDefault(); // Evita el envío del formulario hasta que se valide
 
-        // Obtener los valores de los campos del formulario
+        // Obtiene los valores de los campos del formulario
         const nombre = document.getElementById("nombre").value.trim();
         const apellido = document.getElementById("apellido").value.trim();
         const email = document.getElementById("email").value.trim();
@@ -60,6 +60,7 @@ window.onload = function() {
             document.getElementById("error-pedidos").classList.remove('hidden');
         }
 
+        // Aca se utiliza la libreria SweetAlert
         // Si hay un mensaje de error, mostrarlo en una alerta de SweetAlert2
         if (errorMessage) {
             Swal.fire({
